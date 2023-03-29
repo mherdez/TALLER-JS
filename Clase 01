@@ -1,0 +1,37 @@
+
+// VARIABLES 3 TIPOS var, let, const
+
+var nombre_del_alumno = 'Manuel'; // snakecase
+var nombreDelAlunno = 'Manuel'    // kebabcase
+var areaDelCuadrado = 'Manuel';   // deben ser declarativas ej. 20.50
+var alumno1 = 'Manuel'            // se pueden combinar letras y nums
+
+// var numero = 1;
+// var cadena = 'saludo'
+// var resultado = true
+// var pi = 3.1416
+// var letra = 'a'
+// var numeros = [1,2,3]
+// var perro = {nombre: 'bravo', color: 'cafe'}
+
+// let numero = 1;
+// console.log({numero})
+// numero = 2
+// console.log({numero})
+
+const nombre = 'Manuel'
+console.log({nombre})
+
+// nombre = 'Maria'
+// console.log(nombre)
+
+
+
+
+
+
+
+
+
+
+

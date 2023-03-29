@@ -1,0 +1,41 @@
+
+RUN JS
+https://runjs.app/
+
+JSBIN (PLATAFORMA ONLINE)
+https://jsbin.com/
+
+REFERENCIA ( MOZILLA )
+https://developer.mozilla.org/es/
+https://javascript.info/
+https://www.w3schools.com/js/default.asp
+
+IA
+https://chat.openai.com/chat
+
+CERTIFICACION DE JS
+https://www.freecodecamp.org/
+
+Fundamentos
+- Variables
+- Tipos de datos
+- Operadores
+
+Control de flujo
+- Condicionales
+- Ciclos
+
+Funciones
+  - function
+  - arrow function
+
+Colecciones de datos
+- Arreglos
+- ForEach
+- Map
+- Filter
+
+API REST
+- Promesa
+- Fetch
+- Async - Await

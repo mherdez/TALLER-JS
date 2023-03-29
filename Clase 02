@@ -1,0 +1,104 @@
+// operadores Unitarios y Binarios
+
+// unario. un solo operando ej. -x 
+// binario. dos operandos ej x = 1
+
+// Operadores
+// JavaScript tiene los siguientes tipos de operadores. Esta sección describe los operadores y contiene información sobre la precedencia de los mismos.
+
+// Operadores de asignación
+// Operadores de comparación
+// Operadores aritméticos
+// Operadores bit a bit
+// Operadores lógicos
+// Operadores de cadena
+// Operador condicional (ternario)
+// Operador coma
+// Operadores unarios
+// Operadores relacionales
+
+
+// ----------------------------
+// Operadores Matematicos
+// Adición +
+// resta -
+// multiplicación *
+// división /
+// resto %
+// Exponenciación **
+
+// Concatenación de cadenas con binario +
+
+// console.log('El total son: ' + 20 + 1 + " pesos")
+// console.log(`El total son: ${20 + 1} pesos`);
+// let total = 20
+// console.log(`El total son: ${total} pesos`);
+
+// conversiones
+// let respuesta = -1;
+// console.log(!respuesta)
+// console.log(-respuesta)
+// console.log(--respuesta) // respuesta = respuesta - 1
+
+// let boleano = true
+// console.log(-boleano)
+// console.log(boleano)
+// console.log(!boleano)
+
+// if( 1 ) {
+//   console.log(true)
+// } else {
+//   console.log(false)
+// }
+
+// Asignación AND lógico	x &&= y	x && (x = y)
+// Asignación OR lógico	x ||= y	x || (x = y)
+// Asignación de anulación lógica	x ??= y	x ?? (x = y)
+
+// let nombre ;
+// // let usuario
+// nombre ??= 'anonimo';
+
+// const funcion = (num = 0) => {
+//   console.log({num})
+// }
+// funcion()
+
+// let numero = 10;
+// numero ??= 0
+// console.log( {numero} )
+
+// console.log('-----------')
+
+
+// INCREMENTO Y DECREMENTO
+
+// let numero = 0
+// numero = numero + 1 
+// console.log({numero})
+
+// let num = 0
+// num += 1
+// console.log({num})
+
+// let n = 0
+// ++n
+// console.log({n})
+
+
+// for(let i=1; i <= 5; ++i) {
+//   console.log(i)
+// }
+
+let j = 1
+while( j <= 5) {
+  // console.log(j)
+  j++
+}
+console.log(j)
+
+
+
+
+
+console.log('----------')

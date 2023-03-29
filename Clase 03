@@ -1,0 +1,118 @@
+Condicionales
+
+Operadores Matemáticos
+
+==    igual a
+===   igual valor e igual tipo
+!=    diferente
+!==   diferente valor y diferente tipo
+>     mayor que
+<     menor que
+>=    mayor o igual que
+<=    menor o igual que
+
+Operadores Lógicos
+
+&&    y
+||    o
+!     no
+
+Operador Ternario
+variablename = (condition) ? value1 : value2
+
+const a = 1
+const b = 1
+const c = 2
+
+console.log(!true)
+
+console.log(typeof a, typeof b)
+
+if( !true ) {
+ VERDADERO
+  console.log({a,b})
+  console.log('verdadero')
+} else {
+ FALSE
+  console.log('falso')
+}
+
+
+let impar = true;
+
+for( let i = 1; i<=10; i++) {
+  if( !impar ) {
+    console.log(i,'par')
+  } else {
+    console.log(i, 'impar')
+  }
+  impar = !impar
+}
+
+const res = ( false )
+            ? 'verdadero'
+            : 'falso';
+
+console.log(res)
+
+console.log( true ? 'verdadero' : 'falso' )
+
+
+FALSY
+
+false     (el valor booleano falso)
+0         (el número cero)
+NaN       (Not a Number, por ejemplo, el resultado de dividir cero por cero)
+null      (un valor especial que indica la ausencia de un objeto)
+undefined (un valor especial que indica que una variable no tiene valor asignado)
+""        (una cadena vacía)
+
+
+// IF, ELSE, ELSE IF
+
+if ( true ) {
+  // verdadero
+  // console.log('ok')
+}
+
+// if ( false ) {
+//   // verdadero
+//   console.log('ok')
+// } else {
+//   // falso
+//   console.log('no ok')
+// }
+
+const numero = 0
+
+if ( numero > 0) {
+  console.log('mayor que cero')
+} else if ( numero < 0 ) {
+  console.log('menor que cero')
+} else if ( numero == 0 ){
+  console.log('es cero')
+}
+
+// SWITCH
+
+const opcion = 1
+
+switch(opcion) {
+  case 1:
+    // code block
+    console.log('elegiste la opcion 1')
+    break;
+  case 2:
+    // code block
+    console.log('elegiste la opcion 2')
+    break;
+  case 3:
+    // code block
+    console.log('elegiste la opcion 3')
+    break;
+  default:
+    // code block
+    console.log('opcion no valida')
+}
+
+
