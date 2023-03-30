@@ -1,0 +1,146 @@
+
+BLOQUES
+
+Una sentencia block se utiliza para agrupar cero o más sentencias. Este grupo block se delimita por un par de llaves.
+
+Sintaxis
+  {
+    sentencia_1;
+    sentencia_2;
+    ...
+    sentencia_n;
+  }
+
+  // sentencia_1, sentencia_2, sentencia_n
+
+Sentencias agrupadas dentro de una sentencia block.
+
+  objeto =  {
+    propiedad1: valor,
+    propiedad2: valor,
+    propiedad3: () => {},
+    propiedad4: [1,2,3]
+  }
+
+
+BUCLES O CICLOS
+
+Definición: Los bucles ofrecen una forma rápida y sencilla de hacer algo repetidamente.
+
+TIPOS DE BUCLES
+
+------------------
+- Declaración for
+------------------
+  Un ciclo for se repite hasta que una condición especificada se evalúe como false.
+
+  Sintáxis
+  for ([expresiónInicial]; [expresiónCondicional]; [expresiónDeActualización]) {
+    // instrucción
+  }
+
+  for (begin; condition; step) {
+    // ... loop body ...
+  }
+
+  for( inicial, condicion, actualizacion ) {
+    setencias...
+    setencias...
+    setencias...
+  }
+  listar los numero del 1 al 10
+  for( let i = 1; i <= 10; i++) {   // i++ // i += 1 // i = i + 1
+    console.log(i)
+  }
+  listar los numero del 10 al 1
+  for( let i = 10; i >= 1; i--) {   // i-- // i -= 1 // i = i - 1
+    console.log(i)
+  }
+
+------------------
+- Declaración do...while
+------------------
+La instrucción do...while se repite hasta que la condición sea falsa.
+
+Sintáxis
+
+do {
+  expresión
+}
+while (condición);
+
+do {
+  // loop body
+} while (condition);
+
+
+let i = 1;
+do {
+  console.log(i)
+  i++;
+} while( i <= 10 )
+
+------------------
+- Declaración while
+------------------
+Una declaración while ejecuta sus instrucciones siempre que una condición especificada se evalúe como true.
+
+Sintáxis
+
+while (condición){
+  expresión
+}
+
+while (condition) {
+  // code
+  // so-called "loop body"
+}
+
+let j = 5;
+while ( j <= 3 ) {
+  console.log('estoy dentro del ciclo while')
+  j++
+}
+
+------------------
+- Declaración labeled, break, continue
+------------------
+Una label proporciona una instrucción con un identificador que te permite hacer referencia a ella en otra parte de tu programa. Por ejemplo, puedes usar una etiqueta para identificar un bucle y luego usar las declaraciones break o continue para indicar si un programa debe interrumpir el bucle o continuar su ejecución.
+
+rompeI: for( let i = 1; i <= 5; i++) {
+  for( let j = 1; j <= 3; j++) {
+    if( j >= 2 ) {
+        break rompeI;
+    }
+    console.log({i},{j})
+    contador++
+  }
+}
+
+------------------
+- Declaración for...in
+------------------
+La instrucción for...in itera una variable especificada sobre todas las propiedades enumerables de un objeto.
+
+Sintáxis
+
+for (variable in objeto){
+  instrucción
+}
+
+for( let indice in arreglo ) {
+  console.log( arreglo[indice] )
+}
+
+------------------
+- Declaración for...of
+------------------
+La declaración for...of crea un bucle que se repite sobre objetos iterables (incluidos Array, Map (en-US), Set, objetos arguments y así sucesivamente), invocando un bucle de iteración personalizado con declaraciones que se ejecutarán para el valor de cada distinta propiedad.
+
+for ( let valor of arreglo ) {
+  console.log( valor )
+}
+
+for (variable of objeto){
+  expresión
+}
