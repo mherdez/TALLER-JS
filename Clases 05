@@ -1,0 +1,122 @@
+Funciones
+  - function
+  - arrow function
+
+FUNCION
+
+Las funciones son los principales "bloques de construcción" del programa. Permiten llamar al código muchas veces sin repetición.
+
+DECLARACION DE FUNCION
+Para crear una función podemos usar una declaración de función .
+
+SINTAXIS
+
+function verMensaje() {
+  [cuerpo de la funcion]
+}
+
+EJECUTAR O LLAMAR UNA FUNCION
+
+La llamada showMessage() ejecuta el código de la función.
+
+
+function saludar() {
+  const mensaje = 'Hola mundo'
+  return mensaje
+}
+
+console.log( saludar() )  // <------ EJECUTA LA FUNCION
+console.log( saludar   )  // <------ MUESTRA LA FUNCION
+
+La "function" palabra clave va primero, luego va el nombre de la función , luego una lista de parámetros entre paréntesis (separados por comas, vacíos en el ejemplo anterior, veremos ejemplos más adelante) y finalmente el código de la función, también llamado “ el cuerpo de la función”, entre llaves.
+
+function name(parameter1, parameter2, ... parameterN) {
+ // body
+}
+
+////////
+
+
+function saludar( nombre = 'desconocid@') { // <---- ASIGNACION POR DEFECTO DE UN PARAMETRO
+  const mensaje = 'Hola ' + nombre
+  return mensaje
+}
+
+console.log( saludar('SOFIA') )  // <------ EJECUTA LA FUNCION
+console.log( saludar() )
+
+///////
+
+PARAMETROS POSICIONALES
+
+function saludar( nombre, edad ) {
+  const mensaje = 'Hola ' + nombre + ", me dijeron que tienes " + edad + " años"
+  return mensaje
+}
+
+console.log( saludar('SOFIA', 30) )
+console.log( saludar( 40, 'ANTONIO')) // ❌ <---- PARAMETROS POSICIONALES
+
+PARAMETROS NOMBRADOS
+
+
+function saludar( { nombre, edad } ) {
+  const mensaje = 'Hola ' + nombre + ", me dijeron que tienes " + edad + " años"
+  return mensaje
+}
+
+console.log( saludar( { edad: 40, nombre: 'Antonio' } ))
+
+
+JUGANDO CON LAS FUNCIONES
+
+
+function estasViejo(edad) {
+  // if( edad > 20 ) {
+  //   return 'estas viejo'
+  // } else {
+  //   return 'estas tierno'
+  // }
+  return ( edad > 20 ) ? 'estas viejo' : 'estas tierno'
+}
+
+function saludar( { nombre, edad } ) {
+  return `Hola ${ nombre }, me dieron que tienes ${ edad } años... yo creo que estas ${ estasViejo(edad) }`
+}
+
+console.log( saludar( { edad: 18, nombre: 'Antonio' } ))
+
+FUNCIONES DE FLECHA
+
+Hay otra sintaxis muy simple y concisa para crear funciones, que suele ser mejor que las expresiones de función.
+
+Se llama "funciones de flecha", porque se ve así:
+
+let func = (arg1, arg2, ..., argN) => expression;
+
+const estasViejo = (edad) => ( edad > 20 ) ? 'estas viejo' : 'estas tierno';
+
+const saludarAF = ({ nombre, edad }) => `Hola ${ nombre }, me dieron que tienes ${ edad } años... yo creo que estas ${ estasViejo(edad) }`
+
+console.log( saludarAF({nombre:'ana', edad:20}) )
+
+RESUMEN
+
+Las funciones de flecha son útiles para acciones simples, especialmente para frases ingeniosas. Vienen en dos sabores:
+
+Sin llaves: (...args) => expression– el lado derecho es una expresión: la función la evalúa y devuelve el resultado. Los paréntesis se pueden omitir, si solo hay un único argumento, por ejemplo n => n*2.
+
+Con llaves: (...args) => { body }– los corchetes nos permiten escribir múltiples sentencias dentro de la función, pero necesitamos un explícito returnpara devolver algo.
+
+
+const sumar = (a, b) => {
+  return a + b
+}
+
+console.log( sumar(1,2) )
+
+
+
+
+
+
