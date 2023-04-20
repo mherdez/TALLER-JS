@@ -1,0 +1,135 @@
+Colecciones de datos
+- Arreglos
+- ForEach
+- Map
+- Filter
+
+
+ARREGLOS
+
+Los objetos le permiten almacenar colecciones de valores con clave.
+
+Declaración
+
+Hay dos sintaxis para crear una arreglo vacío:
+
+const arr = new Array();
+const arr = [];
+
+Casi todo el tiempo, se utiliza la segunda sintaxis. Podemos suministrar elementos iniciales entre paréntesis:
+
+const frutas = ["Manzana", "Naranja", "Uva"];
+
+Los elementos del arreglo están numerados, comenzando con cero.
+
+Podemos obtener un elemento por su número (posición, índice) entre corchetes:
+
+const frutas = ["Manzana", "Naranja", "Uva"];
+
+console.log( frutas[0] ); // Manzana
+console.log( frutas[1] ); // Naranja
+console.log( frutas[2] ); // Uva
+
+El recuento total de los elementos en el arreglo es su length:
+
+console.log( frutas.length ) // 3
+
+ITERANDO CON FOR, FOR..IN, FOR..OF, FOREACH
+
+// console.log(frutas)
+
+// console.log( frutas[0] ); // Manzana
+// console.log( frutas[1] ); // Naranja
+// console.log( frutas[2] ); // Uva
+
+// frutas.length
+
+// const showFruta = ( fruta ) => {
+//   console.log(fruta)
+// }
+
+// const frutas = ['🍊', '🍉', '🍓', '🍌', '🍇'];
+
+// FORMA 5 <-- FOREACH VERSION CORTA
+// frutas.forEach( showFruta )
+// frutas.forEach( fruta => showFruta(fruta))
+
+// FORMA 4 <-- FOREACH VERSION LARGA
+// frutas.forEach( (fruta) => {
+//   console.log(fruta)
+// })
+
+// FORMA 3 <-- FOR OF
+// for( let fruta of frutas) {
+//   console.log(fruta)
+// }
+
+// FORMA 2 <-- FOR IN
+// for( let i in frutas) {
+//   console.log( frutas[i] )
+// }
+
+// FORMA 1 <-- FOR LENGTH
+// for( let i = 0; i < frutas.length; i++) {
+//   console.log(frutas[i])
+// }
+
+AGREGAR Y ELIMINAR ELEMENTOS DEL ARREGLO
+
+const frutas = ['🍊', '🍉', '🍓' ];
+
+// AÑADIR ELEMENTOS AL ARREGLO
+
+// PUSH ( AÑADIR AL FINAL DEL ARREGLO )
+
+frutas.push('🍇')
+
+// UNSHIFT ( AÑADIR AL PRINCIPIO DEL ARREGLO)
+
+frutas.unshift('🍐')
+
+// REMOVER ELEMENTOS DEL ARREGLO
+
+// POP ( REMOVER DESDE EL FINAL )
+
+const frutaEliminadaDelFinal = frutas.pop()
+console.log(frutaEliminadaDelFinal)
+
+// SHIFT ( REMOVER DESDE EL PRINCIPIO)
+
+const frutaEliminadaDelPrincipio = frutas.shift()
+console.log(frutaEliminadaDelPrincipio)
+
+let frutas = ['🍊', '🍉', '🍓' ];
+
+// frutas = [...frutas, '🍌']
+// frutas = ['🍎', ...frutas]
+
+frutas = ['🍎', '🍑', ...frutas, '🍌', '🥭']
+
+
+console.log(frutas)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Métodos pop/push, shift/unshift
+
+
+
