@@ -32,8 +32,19 @@ Funciones
 Colecciones de datos
 - Arreglos
 - ForEach
-- Map
-- Filter
+- map
+- filter
+- reduce
+- find
+- findIndex
+- indexOf
+- every
+- some
+- fill
+- split
+- join
+- slice
+- Objetos ('https://mherdez.github.io/guia-poo-pokemon/')
 
 API REST
 - Promesa

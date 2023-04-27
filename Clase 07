@@ -1,0 +1,108 @@
+
+// PROGRAMACION FUNCIONAL
+
+// La programación funcional en JavaScript se enfoca en el uso de funciones
+
+// Programacion declarativa: https://youtu.be/foYs5OShBwk
+
+// METODOS MAS UTILIZADOS
+
+const numeros = [1,2,3,4,5,6,7,8,9,10];
+
+numeros.forEach( function() {
+  console.log(numeros)
+})
+
+
+
+// const numeros = [1,2,3,4,5];
+
+// Array.map()
+// El método map() crea un nuevo array con los resultados de la llamada a la función indicada aplicados a cada uno de sus elementos.
+// REGRESA EL MISMO NUMERO DE ELEMENTOS QUE TIENE EL ARREGLO ORIGINAL
+
+// const arrMap = numeros.map( num => num * 2)
+// console.log(arrMap)
+
+// Dado un arreglo de objetos que representan estudiantes, crear un nuevo arreglo con sus nombres y el promedio.
+
+// const estudiantes = [
+//   { nombre: 'Chonito', calif: [10,9,5] },
+//   { nombre: 'Petra', calif: [7,9,10] },
+//   { nombre: 'Concha', calif: [6,9,8] },
+// ]
+
+// estudiantes.map( alumno => {
+//   let promedio = 0
+//   for(let c of alumno.calif) {
+//     promedio += c
+//   }
+//   promedio = promedio / alumno.calif.length
+//   const objeto = {nombre: alumno.nombre, promedio: promedio.toFixed(2)}
+//   return objeto
+// })
+
+
+// Dado un arreglo de nombres, capitalizar la primera letra de cada nombre y devolver un nuevo arreglo con los nombres capitalizados.
+
+const capitalizando = ( palabra ) => {
+  let nombreCapital = ''
+  for( let p in palabra) {
+     nombreCapital += ( p == 0 )
+                   ? palabra[p].toUpperCase()
+                   : palabra[p];
+  }
+  return nombreCapital
+}
+
+const nombres = ['chonita', 'juanita', 'petra'];
+const newArrCap = nombres.map( nombre => capitalizando(nombre))
+
+console.log(newArrCap);
+
+// METODO COMPACTO
+
+let saludo = 'hola'
+
+//.           H.                      ola
+saludo.charAt(0).toUpperCase() + saludo.slice(1)
+
+const nombres = ['chonita', 'juanita', 'petra'];
+
+const newArr = nombres.map( nombre => nombre.charAt(0).toUpperCase() + nombre.slice(1));
+
+console.log(newArr)
+
+
+// Array.filter()
+// El método filter() crea un nuevo array con todos los elementos que cumplan la condición implementada por la función dada.
+
+// const numeros = [1,2,3,4,5,6,7,8,9,10,11,12,13];
+
+// const esPrimo = ( num ) => {
+//   for( let i = 2; i < num; i++ ) {
+//     if( num % 2 === 0) return false
+//   }
+//   return true
+// }
+
+// const arrFilter = numeros.filter( num => esPrimo(num))
+// console.log(arrFilter)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

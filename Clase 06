@@ -76,6 +76,8 @@ ITERANDO CON FOR, FOR..IN, FOR..OF, FOREACH
 
 AGREGAR Y ELIMINAR ELEMENTOS DEL ARREGLO
 
+Métodos push/pop, unshift/shift
+
 const frutas = ['🍊', '🍉', '🍓' ];
 
 // AÑADIR ELEMENTOS AL ARREGLO
@@ -100,13 +102,17 @@ console.log(frutaEliminadaDelFinal)
 const frutaEliminadaDelPrincipio = frutas.shift()
 console.log(frutaEliminadaDelPrincipio)
 
+
+// SPREAD OPERATION
+
+// La sintaxis extendida o spread syntax permite a un elemento iterable tal como un arreglo o cadena ser expandido en lugares donde cero o más argumentos (para llamadas de función) o elementos (para Array literales) son esperados, o a un objeto ser expandido en lugares donde cero o más pares de valores clave (para literales Tipo Objeto) son esperados.
+
 let frutas = ['🍊', '🍉', '🍓' ];
 
 // frutas = [...frutas, '🍌']
 // frutas = ['🍎', ...frutas]
 
 frutas = ['🍎', '🍑', ...frutas, '🍌', '🥭']
-
 
 console.log(frutas)
 
@@ -129,7 +135,7 @@ console.log(frutas)
 
 
 
-Métodos pop/push, shift/unshift
+
 
 
 

@@ -1,0 +1,28 @@
+// Jugando con los metodos
+
+// Hacer una funcion que determine si una palabra es o no un Palindromo
+const palabra = 'ollo'
+
+const esPalindromoV1 = ( palabra ) => {
+
+  let newPalabra = ''
+  for( let i = palabra.length - 1; i >= 0; i-- ) {
+    newPalabra += palabra[i]
+  }
+  return newPalabra === palabra
+
+}
+
+const esPalindormoV2 = ( palabra ) => {
+  let arr = [...palabra]
+  arr.reverse()
+  return palabra === arr.join('')
+}
+
+const esPalindormoV3 = ( palabra ) => palabra.split('').reverse().join('') === palabra
+
+esPalindromoV1( palabra );
+esPalindormoV2( palabra )
+esPalindormoV3( palabra )
+
+
