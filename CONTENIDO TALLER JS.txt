@@ -34,16 +34,17 @@ Colecciones de datos
 - ForEach
 - map
 - filter
-- reduce
 - find
-- findIndex
-- indexOf
 - every
 - some
 - fill
 - split
 - join
 - slice
+- includes
+- reduce
+- findIndex
+- indexOf
 - Objetos ('https://mherdez.github.io/guia-poo-pokemon/')
 
 API REST
