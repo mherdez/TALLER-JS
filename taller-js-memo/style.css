@@ -1,0 +1,28 @@
+
+body {
+  background-color: rgb(25,25,50);
+  font-family: sans-serif;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(120px, 1fr));
+  width: 50%;
+  margin: 30px auto;
+  gap: 40px;
+}
+.box {
+  border: 5px solid yellow;
+  border-radius: 3px;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
