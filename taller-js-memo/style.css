@@ -18,11 +18,16 @@ h1 {
 }
 .box {
   border: 5px solid yellow;
-  border-radius: 3px;
+  border-radius: 15px;
   width: 120px;
   height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 4rem;
+  cursor: pointer;
+  color: rgb(177, 177, 177);
+}
+.box:hover{
+  background-color: rgba(110, 110, 110, 0.5);
 }
