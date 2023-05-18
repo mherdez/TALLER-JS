@@ -30,25 +30,27 @@ const handleClick = (id) => {
       console.log(parejasEncontradas);
       parejas = [];
       if (parejasEncontradas.length === 6) {
-        var end = Date.now() + (5 * 1000);
+        var end = Date.now() + (3 * 1000);
         // go Buckeyes!
-        var colors = ['#000', '#ff0000', '#f3f3f3'];
+        var colors = ['#6e12e8', '#ffff00', '#ff0000',];
         (function frame() {
           confetti({
-            particleCount: 2,
+            particleCount: 5,
             angle: 60,
-            spread: 55,
+            spread: 100,
             origin: {
-              x: 0
+              x: 0,
+              y: .6
             },
             colors: colors
           });
           confetti({
-            particleCount: 3,
+            particleCount: 5,
             angle: 120,
-            spread: 55,
+            spread: 100,
             origin: {
-              x: 1
+              x: 1,
+              y: .6
             },
             colors: colors
           });
